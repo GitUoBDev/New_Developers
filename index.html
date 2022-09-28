@@ -45,6 +45,47 @@ li{list-style-type: square;text-align:justify; margin:0.25rem 1rem 0rem 0.25rem}
   
 </div> -->
 
+
+<div class="social">
+  <a href="mailto:aaabbas@uob.edu.bh">
+    <img src="email.png"> <span>Contact</span>
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="#">
+    <img src="share.png"> <span id="share">Share Page</span>
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <!-- <a href="https://portfolio-9a71b.web.app/#" onclick="var myAudio = document.querySelector(&#39;audio&#39;);
+  myAudio.currentTime=0;
+  myAudio.paused ? myAudio.play() : myAudio.pause();">
+    <img src="./Anes Abbas - Homepage_files/play.png"> <span id="share">Play/Mute</span>
+  </a> -->
+  <!-- &nbsp;&nbsp;&nbsp;
+    <a href = "">
+    <input class="native-hidden" type="checkbox" /> Play Soundtrack
+  </a> -->
+</div>
+
+<!-- <br> -->
+
+<script>
+  (function(){
+ document.querySelector('#share').addEventListener('click', event => {
+    if (navigator.share) {
+      navigator.share({
+          title: 'Developer Learning Resources',
+           text:  '#UoB_Developer',
+          url: 'https://bit.ly/3Rg11BD'
+      }).then(() => {})
+      .catch();
+      // .catch(console.error);
+    } else { }
+  });
+  
+  })();//
+  </script>
+
+
 <p><b>Why Development?</b> As a developer:
   
 <li> You can build anything for anyone in any sector ( science, technology, health, environment, energy, education .. etc)
